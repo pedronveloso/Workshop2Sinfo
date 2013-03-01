@@ -1,0 +1,32 @@
+Exercise
+
+
+Show this webpage:
+
+http://html5test.com/
+IntelliJ Idea - Community Edition
+and enable the various HTML5 WebStorage APIs, if available of course:
+
+	WebView webView = (WebView) findViewById()....
+	webView.loadURL(...)
+	WebSettings webSettings = webView.getSettings();
+	webSettings.setJavaScriptEnabled(true);
+	
+	webSettings.setDomStorageEnabled(true);
+	webSettings.setAppCacheEnabled(true);
+	webSettings.setAppCachePath(getCacheDir().getAbsolutePath());
+	webSettings.setAppCacheMaxSize(1 * 1024 * 1024);
+	webSettings.setDatabaseEnabled(true);
+	webSettings.setDatabasePath("/data/data/" + getPackageName() + "/databases");
+
+
+On the Aplication's ActionBar show the URL being loaded on the subTitle,
+and if not possible show it on the title instead!
+
+// ActionBar
+
+	getActionBar().setSubtitle(...)
+
+// Title
+
+	setTitle(...)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BadApplication</string>
+    <string name="intro_name">Introduza o seu nome</string>
+    <string name="validate">Validar</string>
+    <string name="field_empty">Campo vazio!</string>
+    <string name="dummy_text">Blablabla SINFO blablabla</string>
+    <string name="list_title">Lista de coisas fantásticas e espetaculares</string>
+    
+</resources>
